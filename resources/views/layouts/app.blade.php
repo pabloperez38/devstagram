@@ -4,11 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
-    <title>Devstagram - @yield('titulo')</title>
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
-
+    <title>DevStagram - @yield('titulo')</title>
     @livewireStyles
 
 </head>
